@@ -6,51 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Gallery</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Domine|Goudy+Bookletter+1911|Noto+Sans|Titillium+Web&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Noto+Sans|Titillium+Web&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   <style>
     :root {
       --sage-bg: #C9C5B1;
       --panel-bg: rgba(201, 197, 177, 1);
       --text: rgba(0, 0, 0, 1);
+      --dark: #434343;
+      --light: #f8f7f3;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background-color: var(--sage-bg);
+      background: var(--sage-bg);
       color: var(--text);
       font-family: 'Noto Sans', sans-serif;
+    }
+
+    .site-header {
+      background: rgba(67, 67, 67, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    .site-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
     }
 
     .page-wrap {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 10%;
+      padding: 40px 10% 60px;
     }
 
     .section {
-      background-color: var(--panel-bg);
+      background: var(--panel-bg);
       padding: 40px 10%;
       margin: 0 0 20px;
     }
 
-    h1 {
+    h1, h2 {
       font-family: 'Domine', serif;
       font-weight: bold;
-      font-size: clamp(2.1rem, 4vw, 3rem);
+      margin: 0 0 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
       text-align: center;
-      margin: 0 0 1rem;
     }
 
-    .story {
-      font-family: 'Goudy Bookletter 1911', serif;
-      font-size: clamp(1.4rem, 2vw, 2.1rem);
-      line-height: 1.6;
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
     }
 
-    .story p {
-      margin: 0 0 1rem;
+    .gallery-item {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 1rem;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 450px) {
@@ -64,20 +120,30 @@
   </style>
 </head>
 <body>
-  <div class="page-wrap">
-    <div class="section">
-      <h1>About Me</h1>
-    </div>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">About Me</a>
+      <a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a>
+      <a class="nav-link" href="Services.html">Services</a>
+      <a class="nav-link" href="Booking.html">Booking</a>
+    </nav>
+  </header>
 
-    <div class="section story">
-      <p>Hi, I’m Alex.</p>
-      <p>Howe &amp; Hound started because I struggled to find somewhere I truly trusted with my own dogs.</p>
-      <p>All three of mine are rescues, and each came to me with their own story. Bandit was pulled from Tennessee after being found in a culvert in a near-death situation, and I knew from the beginning that dogs deserved a different kind of care.</p>
-      <p>When I traveled, I didn’t want to simply drop my dogs off at a kennel. I wanted someone who would know them, understand their quirks, give them plenty of time outside, and care for them with patience and dignity.</p>
-      <p>So I created that place.</p>
-      <p>Howe &amp; Hound is a small, personal boarding experience on 11 beautiful acres, built around giving every dog the attention, space, and care I would want for my own.</p>
-      <p>This is much deeper than a typical boarding setup, because every stay helps me help dogs like Bandit get a second chance at life.</p>
-    </div>
-  </div>
+  <main class="page-wrap">
+    <section class="section">
+      <h1>Gallery</h1>
+    </section>
+
+    <section class="section">
+      <div class="gallery-grid">
+        <div class="gallery-item">Sunlit yard time</div>
+        <div class="gallery-item">Daily dog routines</div>
+        <div class="gallery-item">Country retreat</div>
+        <div class="gallery-item">Play and enrichment</div>
+        <div class="gallery-item">Rest &amp; recovery</div>
+        <div class="gallery-item">Happy tails</div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

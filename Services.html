@@ -14,69 +14,85 @@
       --panel-bg: rgba(201, 197, 177, 1);
       --text: rgba(0, 0, 0, 1);
       --dark: #434343;
+      --light: #f8f7f3;
       --accent: #6f5535;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background-color: var(--sage-bg);
-      font-family: 'Noto Sans', sans-serif;
+      background: var(--sage-bg);
       color: var(--text);
+      font-family: 'Noto Sans', sans-serif;
     }
 
-    .page-shell {
-      min-height: 100vh;
-      padding: 40px 0 80px;
+    .site-header {
+      background: rgba(67, 67, 67, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    .site-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
     }
 
     .page-wrap {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 10%;
+      padding: 40px 10% 80px;
     }
 
     .section {
-      background-color: var(--panel-bg);
+      background: var(--panel-bg);
       padding: 40px 10%;
       margin: 0 0 20px;
     }
 
-    .section h1,
-    .section h2,
-    .section h3 {
+    h1, h2, h3 {
       font-family: 'Domine', serif;
       font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 1rem;
-    }
-
-    .section h1 {
-      font-size: clamp(2.2rem, 4vw, 3rem);
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-    .section h2 {
-      font-size: clamp(1.7rem, 2.4vw, 2.35rem);
-    }
-
-    .section h3 {
-      font-size: 1.5rem;
-    }
-
-    .section p {
-      font-size: 1.08rem;
-      line-height: 1.7;
       margin: 0 0 1rem;
     }
 
-    .intro {
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
       text-align: center;
-      font-size: 1.15rem;
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 2vw, 2.3rem);
+    }
+
+    p {
+      margin: 0 0 1rem;
+      font-size: 1.08rem;
+      line-height: 1.7;
     }
 
     .service-grid {
@@ -87,16 +103,16 @@
     }
 
     .service-card {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(0,0,0,0.08);
       padding: 1.25rem;
     }
 
     .service-card i {
       display: inline-block;
       margin-bottom: 0.75rem;
-      font-size: 1.7rem;
       color: var(--accent);
+      font-size: 1.7rem;
     }
 
     .note {
@@ -112,7 +128,7 @@
       border: none;
       outline: none;
       background-color: var(--dark);
-      color: #FFFFFF;
+      color: #fff;
       cursor: pointer;
       padding: 0 10px;
       border-radius: 10px;
@@ -122,14 +138,10 @@
       transition: opacity 0.2s ease;
     }
 
-    #hazelScrollToTop:hover {
-      opacity: 0.9;
-    }
+    #hazelScrollToTop:hover { opacity: 0.9; }
 
     @media (max-width: 768px) {
-      .service-grid {
-        grid-template-columns: 1fr;
-      }
+      .service-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 450px) {
@@ -143,79 +155,79 @@
   </style>
 </head>
 <body>
-  <div class="page-shell">
-    <div class="page-wrap">
-      <section class="section">
-        <h1>Services</h1>
-      </section>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">About Me</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link active" href="Services.html" aria-current="page">Services</a>
+      <a class="nav-link" href="Booking.html">Booking</a>
+    </nav>
+  </header>
 
-      <section class="section intro">
-        <p>Small, personal care tailored to each dog’s routine, personality, and comfort level.</p>
-      </section>
+  <main class="page-wrap">
+    <section class="section">
+      <h1>Services</h1>
+    </section>
 
-      <section class="section">
-        <div class="service-grid">
-          <article class="service-card">
-            <i class="fas fa-dog"></i>
-            <h3>Day Camp</h3>
-            <p>More than daycare — a day built around your dog.</p>
-            <p>Days are intentionally kept small and personalized, with plenty of outdoor time, structure, and one-on-one attention.</p>
-          </article>
+    <section class="section">
+      <div class="service-grid">
+        <article class="service-card">
+          <i class="fas fa-dog"></i>
+          <h3>Day Camp</h3>
+          <p>More than daycare — a day built around your dog.</p>
+          <p>Days are intentionally kept small and personalized, with plenty of outdoor time and one-on-one attention.</p>
+        </article>
 
-          <article class="service-card">
-            <i class="fas fa-home"></i>
-            <h3>Boarding</h3>
-            <p>A stay that feels a little less like boarding and a lot more like a country retreat.</p>
-            <p>Boarding is intentionally small-scale so every dog gets the time and attention they deserve.</p>
-          </article>
+        <article class="service-card">
+          <i class="fas fa-home"></i>
+          <h3>Boarding</h3>
+          <p>A stay that feels a little less like boarding and a lot more like a country retreat.</p>
+          <p>Boarding is intentionally small-scale so every dog gets the time and attention they deserve.</p>
+        </article>
 
-          <article class="service-card">
-            <i class="fas fa-heart"></i>
-            <h3>Care Philosophy</h3>
-            <p>We take the time to learn each dog’s routine, comfort level, and what helps them feel secure and happy.</p>
-          </article>
-        </div>
-      </section>
+        <article class="service-card">
+          <i class="fas fa-heart"></i>
+          <h3>Care Philosophy</h3>
+          <p>We take the time to learn each dog’s routine, comfort level, and what helps them feel secure and happy.</p>
+        </article>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2>Day Camp</h2>
-        <p>Howe &amp; Hound Day Camp is designed for dogs who need more than a few hours in a crowded playgroup. Days are intentionally kept small and personalized, with plenty of outdoor time, structure, and one-on-one attention.</p>
-        <p>Whether your dog needs an adventure day, extra exercise while you’re at work, socialization, or simply somewhere safe to spend the day, their experience is tailored to their personality and routine.</p>
-        <p class="note">Because every dog and schedule is different, Day Camp pricing is customized. Contact us to build the right plan for your dog.</p>
-      </section>
+    <section class="section">
+      <h2>Day Camp</h2>
+      <p>Howe &amp; Hound Day Camp is designed for dogs who need more than a few hours in a crowded playgroup. Days are intentionally kept small and personalized, with plenty of outdoor time, structure, and one-on-one attention.</p>
+      <p>Whether your dog needs an adventure day, extra exercise while you’re at work, socialization, or simply somewhere safe to spend the day, their experience is tailored to their personality and routine.</p>
+      <p class="note">Because every dog and schedule is different, Day Camp pricing is customized. Contact us to build the right plan for your dog.</p>
+    </section>
 
-      <section class="section">
-        <h2>Boarding</h2>
-        <p>Boarding at Howe &amp; Hound is intentionally small-scale so every dog gets the time and attention they deserve. Guests enjoy a comfortable place to settle in, plenty of outdoor time on our property, and a schedule that supports rest, play, and routine.</p>
-        <p>We take the time to get to know each dog, their routine, personality, quirks, comfort level, and what makes them happiest. Whether that means an active day outside or a quieter stay with extra reassurance, we adapt to the dog in front of us.</p>
-        <p>Pick up and drop off service is available upon request.</p>
-        <p class="note">Boarding rates are customized based on your dog’s stay and individual needs. Contact us for personalized pricing and availability.</p>
-      </section>
+    <section class="section">
+      <h2>Boarding</h2>
+      <p>Boarding at Howe &amp; Hound is intentionally small-scale so every dog gets the time and attention they deserve. Guests enjoy a comfortable place to settle in, plenty of outdoor time on our property, and a schedule that supports rest, play, and routine.</p>
+      <p>We take the time to get to know each dog, their routine, personality, quirks, comfort level, and what makes them happiest. Whether that means an active day outside or a quieter stay with extra reassurance, we adapt to the dog in front of us.</p>
+      <p>Pick up and drop off service is available upon request.</p>
+      <p class="note">Boarding rates are customized based on your dog’s stay and individual needs. Contact us for personalized pricing and availability.</p>
+    </section>
 
-      <section class="section">
-        <h2>My routine and my promise to you</h2>
-        <p><strong>Effective spring-fall, winter is full time care.</strong></p>
-        <p>Full transparency about my routine: I work during the day on weekdays. Your dog gets two hours of active time with me before I leave — potty breaks, play, training, and a chance to settle in and decompress.</p>
-        <p>I am committed to helping your dog feel safe, stimulated, and cared for in a way that fits their individual needs.</p>
-      </section>
-    </div>
+    <section class="section">
+      <h2>My routine and my promise to you</h2>
+      <p><strong>Effective spring-fall, winter is full time care.</strong></p>
+      <p>Full transparency about my routine: I work during the day on weekdays. Your dog gets two hours of active time with me before I leave — potty breaks, play, training, and a chance to settle in and decompress.</p>
+      <p>I am committed to helping your dog feel safe, stimulated, and cared for in a way that fits their individual needs.</p>
+    </section>
+  </main>
 
-    <button id="hazelScrollToTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
-  </div>
+  <button id="hazelScrollToTop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const scrollButton = document.getElementById('hazelScrollToTop');
       if (!scrollButton) return;
-
       const updateScrollButton = function () {
         const shouldShow = window.scrollY > 20 || document.documentElement.scrollTop > 20;
         scrollButton.style.display = shouldShow ? 'block' : 'none';
       };
-
       window.addEventListener('scroll', updateScrollButton, { passive: true });
       updateScrollButton();
-
       scrollButton.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });

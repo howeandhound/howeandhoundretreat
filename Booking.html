@@ -12,47 +12,72 @@
       --sage-bg: #C9C5B1;
       --panel-bg: rgba(201, 197, 177, 1);
       --text: rgba(0, 0, 0, 1);
+      --dark: #434343;
+      --light: #f8f7f3;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background-color: var(--sage-bg);
-      font-family: 'Noto Sans', sans-serif;
+      background: var(--sage-bg);
       color: var(--text);
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .site-header {
+      background: rgba(67, 67, 67, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    .site-nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      padding: 1rem 1.25rem;
+    }
+
+    .nav-link {
+      color: var(--light);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      text-decoration: none;
     }
 
     .page-wrap {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 40px 10%;
+      padding: 40px 10% 60px;
     }
 
     .section {
-      background-color: var(--panel-bg);
+      background: var(--panel-bg);
       padding: 40px 10%;
       margin: 0 0 20px;
     }
 
-    h1,
-    h2 {
+    h1 {
       font-family: 'Domine', serif;
       font-weight: bold;
-      margin: 0 0 1rem;
-    }
-
-    h1 {
-      font-size: 30pt;
+      font-size: clamp(2.2rem, 4vw, 3rem);
       text-align: center;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin: 0 0 1rem;
+      margin: 0;
     }
 
     .booking-frame {
@@ -75,12 +100,21 @@
   </style>
 </head>
 <body>
-  <div class="page-wrap">
-    <div class="section">
-      <h1>Booking</h1>
-    </div>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">About Me</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="Services.html">Services</a>
+      <a class="nav-link active" href="Booking.html" aria-current="page">Booking</a>
+    </nav>
+  </header>
 
-    <div class="section">
+  <main class="page-wrap">
+    <section class="section">
+      <h1>Booking</h1>
+    </section>
+
+    <section class="section">
       <iframe
         id="JotFormIFrame-3552569cc6a"
         class="booking-frame"
@@ -92,8 +126,8 @@
         referrerpolicy="no-referrer-when-downgrade"
         src="https://form.jotform.com/3552569cc6a">
       </iframe>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <script>
     (function () {
