@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Booking</title>
+  <title>About the Retreat</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Noto+Sans|Titillium+Web&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   <style>
+    :root {
+      --sage-bg: #C9C5B1;
+      --panel-bg: rgba(201, 197, 177, 1);
+      --text: rgba(0, 0, 0, 1);
+    }
+
+    * { box-sizing: border-box; }
+
     body {
-      background-color: #C9C5B1;
-      font-family: 'Noto Sans', sans-serif;
       margin: 0;
-      color: rgba(0, 0, 0, 1);
+      background-color: var(--sage-bg);
+      color: var(--text);
+      font-family: 'Noto Sans', sans-serif;
     }
 
     .page-wrap {
@@ -21,26 +30,35 @@
     }
 
     .section {
-      background-color: rgba(201, 197, 177, 1);
+      background-color: var(--panel-bg);
       padding: 40px 10%;
       margin: 0 0 20px;
     }
 
-    h1 {
+    h1, h2 {
       font-family: 'Domine', serif;
-      font-size: 30pt;
       font-weight: bold;
-      text-align: center;
-      margin: 0;
+      margin: 0 0 1rem;
     }
 
-    .booking-frame {
-      margin-top: 0;
-      width: 100%;
-      min-width: 320px;
-      height: 1500px;
-      border: none;
-      display: block;
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 2vw, 2.1rem);
+    }
+
+    p {
+      font-size: 1.08rem;
+      line-height: 1.75;
+      margin: 0 0 1rem;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      line-height: 1.8;
     }
 
     @media (max-width: 450px) {
@@ -52,38 +70,19 @@
       }
     }
   </style>
-  <link href="https://fonts.googleapis.com/css?family=Domine|Noto+Sans|Titillium+Web|&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="page-wrap">
     <div class="section">
-      <h1>Booking</h1>
+      <h1>About the Retreat</h1>
     </div>
 
     <div class="section">
-      <iframe
-        id="JotFormIFrame-3552569cc6a"
-        class="booking-frame"
-        title="Booking Form"
-        allowtransparency="true"
-        allowfullscreen="true"
-        scrolling="auto"
-        src="https://form.jotform.com/3552569cc6a">
-      </iframe>
+      <p class="lead">Howe &amp; Hound started because I wanted a place that felt more like a true home for dogs than a standard boarding kennel.</p>
+      <p>All of our dogs are rescues and each one came with a story. That history shaped the way I care for every dog who comes through our doors. I want every dog to feel safe, settled, and treated as a real individual rather than just a number.</p>
+      <p>We’re based on 11 beautiful acres and keep our setting intentionally small so the care stays personal. That means time outside, routine, plenty of attention, and an environment built around trust and rest.</p>
+      <p>Whether a dog needs a more active day, extra reassurance, or a slower, calmer stay, we adapt the experience to fit them. The goal is simple: provide the kind of care I’d want for my own dogs.</p>
     </div>
   </div>
-
-  <script>
-    (function () {
-      var iframe = document.getElementById('JotFormIFrame-3552569cc6a');
-      if (!iframe) return;
-
-      window.addEventListener('message', function (event) {
-        if (event.origin && event.origin.indexOf('jotform.com') !== -1 && event.data && event.data.height) {
-          iframe.style.height = event.data.height + 'px';
-        }
-      }, false);
-    })();
-  </script>
 </body>
 </html>
