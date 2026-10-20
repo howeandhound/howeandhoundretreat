@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Howe &amp; Hound logo</title>
+  <desc id="logoDesc">A circular dog line drawing with three dogs and the words Howe &amp; Hound</desc>
+  <defs>
+    <linearGradient id="furWarm" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d7b793"/>
+      <stop offset="100%" stop-color="#bf8d67"/>
+    </linearGradient>
+    <linearGradient id="furDark" x1="0" x2="1">
+      <stop offset="0%" stop-color="#4b3f38"/>
+      <stop offset="100%" stop-color="#161611"/>
+    </linearGradient>
+    <linearGradient id="furLight" x1="0" x2="1">
+      <stop offset="0%" stop-color="#e5e1df"/>
+      <stop offset="100%" stop-color="#b0b0b0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(0,0)" filter="url(#softShadow)">
+    <path d="M405 558 C 330 512, 280 450, 260 390 C 315 330, 355 300, 415 300 C 465 332, 485 370, 490 420 C 465 462, 440 520, 405 558 Z" fill="none" stroke="#a7b392" stroke-width="3"/>
+    <path d="M795 558 C 870 512, 920 450, 940 390 C 885 330, 845 300, 785 300 C 735 332, 715 370, 710 420 C 735 462, 760 520, 795 558 Z" fill="none" stroke="#a7b392" stroke-width="3"/>
+
+    <g transform="translate(0,0)">
+      <circle cx="370" cy="350" r="103" fill="none" stroke="#49551f" stroke-width="3" opacity="0.8"/>
+      <circle cx="600" cy="300" r="118" fill="none" stroke="#49551f" stroke-width="3" opacity="0.8"/>
+      <circle cx="830" cy="350" r="103" fill="none" stroke="#49551f" stroke-width="3" opacity="0.8"/>
+    </g>
+
+    <g transform="translate(0,0)">
+      <g transform="translate(250,160)">
+        <ellipse cx="120" cy="190" rx="108" ry="88" fill="url(#furWarm)"/>
+        <ellipse cx="120" cy="175" rx="86" ry="70" fill="#d3b991" opacity="0.75"/>
+        <path d="M36 190 Q50 103, 122 100 Q193 103, 200 190 L205 205 Q136 210, 38 205 Z" fill="url(#furWarm)"/>
+        <path d="M88 132 Q101 118, 118 118 Q138 118, 145 132 L143 152 Q125 142, 103 142 Q92 142, 88 132 Z" fill="#b17a50" opacity="0.75"/>
+        <circle cx="84" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="154" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="87" cy="144" r="3" fill="#fff"/>
+        <circle cx="157" cy="144" r="3" fill="#fff"/>
+        <ellipse cx="120" cy="176" rx="36" ry="22" fill="#f5d8c2"/>
+        <path d="M105 178 Q120 194, 136 178" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M100 184 Q120 206, 142 184" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M120 170 L120 196" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M85 194 Q120 230, 155 194" fill="none" stroke="#3d2a23" stroke-width="5" stroke-linecap="round"/>
+        <path d="M80 143 Q95 166, 66 176" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M160 143 Q145 166, 175 176" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="37" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(-20 37 178)"/>
+        <ellipse cx="205" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(20 205 178)"/>
+        <path d="M52 204 Q80 237, 92 220" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M188 204 Q160 237, 148 220" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M90 228 L65 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M150 228 L175 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M75 260 L45 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M165 260 L195 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M65 260 L75 310" stroke="#a45b26" stroke-width="7" stroke-linecap="round"/>
+        <path d="M175 260 L165 310" stroke="#a45b26" stroke-width="7" stroke-linecap="round"/>
+        <path d="M57 314 Q92 330, 120 314 Q148 330, 188 314" fill="none" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M57 314 L40 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M188 314 L205 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M104 138 L112 120" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M136 138 L128 120" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M26 95 Q120 18, 206 95" fill="none" stroke="#885932" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+        <path d="M78 104 Q120 75, 160 104" fill="none" stroke="#885932" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+      </g>
+
+      <g transform="translate(460,150)">
+        <ellipse cx="120" cy="190" rx="108" ry="88" fill="url(#furDark)"/>
+        <path d="M36 190 Q50 103, 122 100 Q193 103, 200 190 L205 205 Q136 210, 38 205 Z" fill="url(#furDark)"/>
+        <path d="M95 132 Q110 123, 124 124 Q141 126, 150 138 L146 155 Q126 145, 104 145 Q92 145, 95 132 Z" fill="#f1f1f1" opacity="0.85"/>
+        <path d="M84 152 Q98 136, 120 134 Q140 136, 146 152" fill="none" stroke="#1f1f1f" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="86" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="154" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="89" cy="144" r="3" fill="#fff"/>
+        <circle cx="157" cy="144" r="3" fill="#fff"/>
+        <ellipse cx="120" cy="176" rx="34" ry="22" fill="#f5d8c2"/>
+        <path d="M103 179 Q120 195, 138 179" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M101 185 Q120 208, 142 185" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M120 171 L120 198" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M85 194 Q120 208, 150 194" fill="none" stroke="#3d2a23" stroke-width="5" stroke-linecap="round"/>
+        <path d="M88 146 Q97 176, 63 181" fill="none" stroke="#1d1d1d" stroke-width="4" stroke-linecap="round"/>
+        <path d="M152 146 Q143 176, 178 181" fill="none" stroke="#1d1d1d" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="39" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(-20 39 178)"/>
+        <ellipse cx="203" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(20 203 178)"/>
+        <path d="M50 204 Q80 238, 96 220" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M190 204 Q160 238, 144 220" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M90 228 L62 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M150 228 L178 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M76 260 L47 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M164 260 L194 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M64 260 L74 310" stroke="#3d2a23" stroke-width="7" stroke-linecap="round"/>
+        <path d="M176 260 L166 310" stroke="#3d2a23" stroke-width="7" stroke-linecap="round"/>
+        <path d="M59 314 Q92 330, 120 314 Q148 330, 188 314" fill="none" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M58 314 L38 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M188 314 L208 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M31 88 Q120 16, 212 89" fill="none" stroke="#4c4c4c" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+        <path d="M78 106 Q120 77, 160 106" fill="none" stroke="#4c4c4c" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+      </g>
+
+      <g transform="translate(670,160)">
+        <ellipse cx="120" cy="190" rx="108" ry="88" fill="url(#furLight)"/>
+        <path d="M36 190 Q50 103, 122 100 Q193 103, 200 190 L205 205 Q136 210, 38 205 Z" fill="url(#furLight)"/>
+        <path d="M90 132 Q106 120, 122 118 Q141 120, 150 136 L144 153 Q126 142, 104 143 Q91 143, 90 132 Z" fill="#d7d7d7" opacity="0.7"/>
+        <circle cx="86" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="154" cy="148" r="10" fill="#1d1d1d"/>
+        <circle cx="89" cy="144" r="3" fill="#fff"/>
+        <circle cx="157" cy="144" r="3" fill="#fff"/>
+        <ellipse cx="120" cy="176" rx="34" ry="22" fill="#f5d8c2"/>
+        <path d="M103 179 Q120 195, 138 179" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M101 185 Q120 208, 142 185" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M120 171 L120 198" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M85 194 Q120 208, 150 194" fill="none" stroke="#3d2a23" stroke-width="5" stroke-linecap="round"/>
+        <path d="M88 146 Q97 176, 63 181" fill="none" stroke="#1d1d1d" stroke-width="4" stroke-linecap="round"/>
+        <path d="M152 146 Q143 176, 178 181" fill="none" stroke="#1d1d1d" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="39" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(-20 39 178)"/>
+        <ellipse cx="203" cy="178" rx="26" ry="14" fill="#f5d8c2" transform="rotate(20 203 178)"/>
+        <path d="M62 200 Q80 236, 99 219" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M178 200 Q160 236, 141 219" fill="none" stroke="#3d2a23" stroke-width="4" stroke-linecap="round"/>
+        <path d="M90 228 L62 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M150 228 L178 270" stroke="#3d2a23" stroke-width="9" stroke-linecap="round"/>
+        <path d="M76 260 L47 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M164 260 L194 310" stroke="#3d2a23" stroke-width="8" stroke-linecap="round"/>
+        <path d="M64 260 L74 310" stroke="#3d2a23" stroke-width="7" stroke-linecap="round"/>
+        <path d="M176 260 L166 310" stroke="#3d2a23" stroke-width="7" stroke-linecap="round"/>
+        <path d="M59 314 Q92 330, 120 314 Q148 330, 188 314" fill="none" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M58 314 L38 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M188 314 L208 330" stroke="#3d2a23" stroke-width="6" stroke-linecap="round"/>
+        <path d="M32 88 Q120 15, 212 89" fill="none" stroke="#7a7a7a" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(0,0)">
+    <text x="600" y="565" text-anchor="middle" font-size="86" font-weight="700" font-family="Georgia, 'Times New Roman', serif" fill="#2c2f2a" letter-spacing="1.5">Howe &amp; Hound</text>
+    <text x="600" y="620" text-anchor="middle" font-size="26" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#495a4e" letter-spacing="1.5">Canine Boarding &amp; Country Retreat</text>
+  </g>
+</svg>
